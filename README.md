@@ -27,14 +27,16 @@ The Enzyme API has three parts: *Static Renderer*, *Shallow Renderer*, *Full DOM
 
 #### Static Renderer
 
-[Docs](https://airbnb.io/enzyme/docs/api/shallow.html)
-
 Renders the given component and return plain HTML.
 
 #### Shallow Renderer
 
+[Docs](https://airbnb.io/enzyme/docs/api/shallow.html)
+
 Renders just the given component and none of it's children.
 
 #### Full DOM Renderer
+
+[Docs](https://airbnb.io/enzyme/docs/api/mount.html)
 
 Renders the component and all if it's children and lets us modify/interact with it.

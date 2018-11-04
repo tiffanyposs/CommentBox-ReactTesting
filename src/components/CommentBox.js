@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 
 
 class CommentBox extends Component {
@@ -11,7 +11,7 @@ class CommentBox extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    
+
     // TODO - call and action creator
     // and save the comment
 

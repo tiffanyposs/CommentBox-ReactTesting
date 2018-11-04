@@ -12,6 +12,11 @@ beforeEach(() => {
   wrapped = shallow(<App />); // component might be a better name
 });
 
+// run this after each test
+afterEach(() => {
+  wrapped.unmount();
+});
+
 it('shows a comment box', () => {
   // checks for 1 CommentBox component
   expect(wrapped.find(CommentBox).length).toEqual(1);
