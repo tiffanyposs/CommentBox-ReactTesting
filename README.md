@@ -1,44 +1,40 @@
+## React Testing - Comment Box
+
+A simple *React/Redux* application to show testing using *Jest* and *Enzyme*.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This is a project from this Udemy course [Advanced React and Redux](https://www.udemy.com/react-redux-tutorial/learn/v4/overview)
 
-In the project directory, you can run:
 
-### `npm start`
+### Notes
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+$ npm run test
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
 
-### `npm test`
+* you can setup a folders named `__tests__` to contain all of your tests. Alternatively, you can name all of you files in the regular file structure ending in `test.js`, example: `App.test.js`.
+* You must setup a `setupTests.js` file in the `src` folder in order to get `Enzyme` testing to work.
+* If you get a test to pass, try to break it to make sure your test doesn't _always_ pass.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Enzyme API
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[General Docs](https://airbnb.io/enzyme/)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The Enzyme API has three parts: *Static Renderer*, *Shallow Renderer*, *Full DOM Renderer*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Static Renderer
 
-### `npm run eject`
+[Docs](https://airbnb.io/enzyme/docs/api/shallow.html)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Renders the given component and return plain HTML.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Shallow Renderer
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Renders just the given component and none of it's children.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Full DOM Renderer
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Renders the component and all if it's children and lets us modify/interact with it.
