@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import Root from 'Root';
 import CommentBox from 'components/CommentBox';
 
 // component
@@ -7,7 +8,11 @@ let wrapped;
 
 // run this before every test
 beforeEach(() => {
-  wrapped = mount(<CommentBox />); // create a full dom render of Comment Box component
+  wrapped = mount(
+    <Root>
+      <CommentBox />
+    </Root>
+  ); // create a full dom render of Comment Box component
 })
 
 // run this after each test
