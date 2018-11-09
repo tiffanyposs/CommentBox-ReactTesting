@@ -1,4 +1,4 @@
-## React Testing - Comment Box
+# React Testing - Comment Box
 
 A simple *React/Redux* application to show testing using *Jest* and *Enzyme*.
 
@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This is a project from this Udemy course [Advanced React and Redux](https://www.udemy.com/react-redux-tutorial/learn/v4/overview)
 
 
-### Notes
+## Notes
 
 ```
 $ npm run test
@@ -17,6 +17,11 @@ $ npm run test
 * you can setup a folders named `__tests__` to contain all of your tests. Alternatively, you can name all of you files in the regular file structure ending in `test.js`, example: `App.test.js`.
 * You must setup a `setupTests.js` file in the `src` folder in order to get `Enzyme` testing to work.
 * If you get a test to pass, try to break it to make sure your test doesn't _always_ pass.
+* Unit Tests - Isolate one part of the application and see if it works ( in the individual `src/components`, `src/reducers`, and `src/actions`)
+* Integration Tests - Does doing this produce that (these are in the main level `src` directory in `__tests__`)
+* Cannot create API requests in JSDom in the test suite
+
+
 
 
 ### Enzyme API
