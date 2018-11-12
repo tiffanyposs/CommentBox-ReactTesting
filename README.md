@@ -1,13 +1,16 @@
 # React Testing - Comment Box
 
-A simple *React/Redux* application to show testing using *Jest* and *Enzyme*.
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This is a project from this Udemy course [Advanced React and Redux](https://www.udemy.com/react-redux-tutorial/learn/v4/overview)
 
 
-## Notes
+## Testing
+
+A simple *React/Redux* application to show testing using *Jest* and *Enzyme*.
+
+
+### Notes
 
 ```
 $ npm run test
@@ -22,26 +25,39 @@ $ npm run test
 * Cannot create API requests in JSDom in the test suite
 
 
-
-
-### Enzyme API
+#### Enzyme API
 
 [General Docs](https://airbnb.io/enzyme/)
 
 The Enzyme API has three parts: *Static Renderer*, *Shallow Renderer*, *Full DOM Renderer*
 
-#### Static Renderer
+##### Static Renderer
 
 Renders the given component and return plain HTML.
 
-#### Shallow Renderer
+##### Shallow Renderer
 
 [Docs](https://airbnb.io/enzyme/docs/api/shallow.html)
 
 Renders just the given component and none of it's children.
 
-#### Full DOM Renderer
+##### Full DOM Renderer
 
 [Docs](https://airbnb.io/enzyme/docs/api/mount.html)
 
 Renders the component and all if it's children and lets us modify/interact with it.
+
+## Higher Order components
+
+`Higher Order Components` are a way to extract redundant code from multiple component into one reusable component.
+
+Steps to writing a `Higher Order Component`:
+
+* Write the logic you want to reuse into a component
+* Create a HOC file and add the HOC scaffold
+* Move the reusable logic into the HOC
+* Pass props/config/behavior through to child
+
+### Notes
+
+* Components named starting with lowercase are functional, while class components start with uppercase
