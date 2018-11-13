@@ -61,3 +61,17 @@ Steps to writing a `Higher Order Component`:
 ### Notes
 
 * Components named starting with lowercase are functional, while class components start with uppercase
+
+
+## Middleware
+
+Middleware Log, modify, or stop actions. This occurs the step between the action and the reducers.
+
+`redux-promise` is a commonly used `middleware` that makes sure a promise is complete before it is sent to a `reducer` from and `action`.
+
+[JSON-Schema.org](http://json-schema.org/)
+[JSON Schema generator](https://jsonschema.net/)
+
+### Notes
+
+* Multiple middlewares are referred to as the 'Middleware Stack'.
